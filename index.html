@@ -1,13 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CD7R00QCGW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CD7R00QCGW");
+    </script>
     <meta charset="utf-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta
       name="description"
-      content="fetchenko — frontend engineer. Projects, experiments, and activity."
+      content="fetchenko (Tanya Fedchenko) - personal website"
     />
 
     <meta name="author" content="fetchenko" />
@@ -15,62 +29,69 @@
     <title>fetchenko</title>
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
 
   <body>
     <header>
       <nav aria-label="Main navigation">
-        <a href="/"> fetchenko </a>
+        <img
+          width="30px"
+          height="30px"
+          src="./favicon-32x32.png"
+          alt="Personal website Logo"
+        />
+        &ensp;
+        <a href="https://github.com/fetchenko" target="_blank"
+          >&emsp;GitHub&emsp;</a
+        >&ensp;
+        <a href="https://www.linkedin.com/in/tkarpovich" target="_blank"
+          >&emsp;LinkedIn&emsp;</a
+        >&emsp;
+        <a href="https://www.instagram.com/bitonic.art" target="_blank"
+          >&emsp;Instagram Art&emsp;</a
+        >
+        <a href="https://www.instagram.com/bitonic.ai" target="_blank"
+          >&emsp;Instagram AI&emsp;</a
+        >
+        <a href="https://unsplash.com/@bitonic/illustrations" target="_blank"
+          >&emsp;Unsplash&emsp;</a
+        >
+        <a href="https://t.me/bitonico" target="_blank">&emsp;Telegram&emsp;</a>
       </nav>
     </header>
 
     <main>
       <section>
         <h1>Bitonic <i>by tanya k</i></h1>
+        <i
+          >why bitonic? for a long time, drawing was my only pastime. I used to
+          draw with a black Pentonic pen, and I really liked its design. I
+          simply replaced “pen” with “bit.”</i
+        >
+        <h2></h2>
       </section>
-
-      <hr />
-      <section id="projects">
-        <h2>Projects</h2>
-
-        <div>
-          <article>
-            <a href="https://github.com/fetchenko/ai-to-do-list">
-              AI To-Do List
-            </a>
-          </article>
-
-          <article>
-            <a href="https://github.com/fetchenko/mokka-coffee">
-              Mokka Coffee
-            </a>
-          </article>
-        </div>
-      </section>
-      <hr />
-      <section id="personal">
-        <h2>Entertainment</h2>
-
-        <article>
-          <a href="https://www.instagram.com/bitonic.art">Pen drawing</a>
-        </article>
-
-        <article>
-          <a href="https://unsplash.com/@bitonic/illustrations">Vectors</a>
-        </article>
-
-        <article>
-          <a href="https://www.instagram.com/bitonic.ai">Drawing + AI</a>
-        </article>
-      </section>
-      <hr />
     </main>
 
     <footer>
-      <br />
       <div>
-        <a href="https://github.com/fetchenko">GitHub</a>
+        <img
+          width="50px"
+          height="50px"
+          src="./favicon-32x32.png"
+          alt="Personal website Logo"
+        />
       </div>
+
+      <b>Bitonic</b>
+      created by
+      <a href="https://github.com/fetchenko" target="_blank"
+        >&nbsp;fetchenko&nbsp;</a
+      >&nbsp;&copy;&nbsp;<span id="year"></span>
     </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
