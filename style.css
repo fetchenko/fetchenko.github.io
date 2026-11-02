@@ -1,10 +1,29 @@
+:root {
+  --gutter: 1rem;
+  --content-max: 48rem;
+}
+@media (min-width: 32rem) {
+  :root {
+    --gutter: 2.5rem;
+  }
+}
+
 body {
-  padding: 1rem;
   background-color: #f4f4f4;
 }
 
 nav a {
   white-space: nowrap;
+}
+
+header,
+main,
+footer {
+  display: grid;
+  grid-template-columns:
+    minmax(var(--gutter), 1fr)
+    minmax(0, var(--content-max))
+    minmax(var(--gutter), 1fr);
 }
 
 nav a::before,
@@ -21,4 +40,9 @@ nav a::before {
 nav a::after {
   content: "〟";
   vertical-align: text-bottom;
+}
+
+.filler-left,
+.filler-right {
+  border-bottom: 1px solid #e6e8ee;
 }
