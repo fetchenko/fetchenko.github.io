@@ -3,57 +3,22 @@ body {
   background-color: #f4f4f4;
 }
 
+nav a {
+  white-space: nowrap;
+}
+
 nav a::before,
 nav a::after {
-  content: "﹏";
   text-align: center;
-  vertical-align: top;
+  opacity: 0.3;
 }
 
-nav a:nth-of-type(1)::before {
+nav a::before {
   content: "〞";
+  vertical-align: text-top;
 }
 
-nav a:nth-of-type(1)::after {
+nav a::after {
   content: "〟";
-}
-
-nav a:nth-of-type(2)::before {
-  content: "༻";
-}
-
-nav a:nth-of-type(2)::after {
-  content: "༽";
-}
-
-nav a:nth-of-type(3)::before {
-  content: "ᨙ";
-}
-
-nav a:nth-of-type(3)::after {
-  content: "ᨚ";
-}
-
-nav a:nth-of-type(4)::before {
-  content: "ᬾ";
-}
-
-nav a:nth-of-type(4)::after {
-  content: "᭄";
-}
-
-nav a:nth-of-type(5)::before {
-  content: "𑇎";
-}
-
-nav a:nth-of-type(5)::after {
-  content: "𑆳";
-}
-
-nav a:nth-of-type(6)::before {
-  content: "𑚮";
-}
-
-nav a:nth-of-type(6)::after {
-  content: "𑚯";
+  vertical-align: text-bottom;
 }
